@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.link {
+    color: rgba(40, 41, 56, 0.80);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    margin-top: 60px;
+}
+
+.panel {
+    margin-top: 43px;
+    background-color: #1C1E53;
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.panel-left {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/img/wednesday.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 75px;
+    padding-left: 75px;
+}
+
+.login {
+    background-image: url(./assets/img/mishk-frede.jpg);
+}
+
+.panel-left h1 {
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.21px;
+}
+
+.panel-left p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 417px;
+}
+
+.panel-right {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 101px;
+}
+
+.panel-right h2 {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+    letter-spacing: 0.14px;
+}
+
+.panel-right p {
+    color: var(--Grey, #F4F6FC);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 16px;
+}
+
+.panel-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    gap: 16px;
+}
+
+.panel-inputs input {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    color: var(--Grey, #F4F6FC);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 18px 0 22px 32px;
+}
+
+label {
+    color: var(--Grey, #F4F6FC);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.panel-right button {
+    border-radius: 5px;
+    background: #FCD980;
+    color: #282938;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.09px;
+    margin-top: 40px;
+    padding: 19px 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.panel-right span {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.09px;
+    margin-top: 27px;
+}
+
+.panel-right span a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.checkboxes__item {
+    padding: 15px;
+    width: 50%;
+}
+
+
+.checkbox.style-c {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox.style-c input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox.style-c input:checked~.checkbox__checkmark {
+    background-color: #f7cb15;
+}
+
+.checkbox.style-c input:checked~.checkbox__checkmark:after {
+    opacity: 1;
+}
+
+.checkbox.style-c:hover input~.checkbox__checkmark {
+    background-color: #eee;
+}
+
+.checkbox.style-c:hover input:checked~.checkbox__checkmark {
+    background-color: #f7cb15;
+}
+
+.checkbox.style-c .checkbox__checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 4px;
+}
+
+.checkbox.style-c .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.checkbox.style-c .checkbox__body {
+    color: #ffffff;
+    line-height: 1.4;
+    font-size: 16px;
+    opacity: 0.4;
+}
